@@ -2,30 +2,28 @@
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
       <q-toolbar>
-        <q-btn
-          flat
-          dense
-          round
-          icon="menu"
-          aria-label="Menu"
-          @click="toggleLeftDrawer"
-        />
+        <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
-        <q-toolbar-title> Quasar App </q-toolbar-title>
-
-        <div>Quasar v{{ $q.version }}</div>
+        <q-toolbar-title> Imperium vs Galaktische Republik </q-toolbar-title>
+        <!-- TODO: Change the name of the div below me :D -->
+        <div>
+          <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+            <q-list>
+              <q-item-label>Important Webpage Links</q-item-label>
+              <!-- FIXME: Fix the Button Dropdown -->
+              <ButtonDropdown v-for="link in Button" :key="link.caption" v-bind="link" />
+            </q-list>
+          </q-drawer>
+        </div>
       </q-toolbar>
     </q-header>
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
+        <!-- TODO: Add more important Links to the navbar -->
         <q-item-label header> Essential Links </q-item-label>
 
-        <EssentialLink
-          v-for="link in essentialLinks"
-          :key="link.title"
-          v-bind="link"
-        />
+        <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
     </q-drawer>
 
@@ -36,59 +34,60 @@
 </template>
 
 <script>
-import { defineComponent, ref } from "vue";
-import EssentialLink from "components/EssentialLink.vue";
+import { defineComponent, ref } from 'vue';
+import EssentialLink from 'components/EssentialLink.vue';
+import ButtonDropdown from 'components/DropdownButton.vue';
 
 const linksList = [
   {
-    title: "Docs",
-    caption: "quasar.dev",
-    icon: "school",
-    link: "https://quasar.dev",
+    title: 'Suffering',
+    caption: 'github.com',
+    icon: 'code',
+    link: 'https://github.com/hexTeiden/Rep_vs_Imp',
   },
   {
-    title: "Github",
-    caption: "github.com/quasarframework",
-    icon: "code",
-    link: "https://github.com/quasarframework",
+    title: 'Drive',
+    caption: 'Google Drive',
+    icon: 'code',
+    link: 'https://drive.google.com/drive/folders/1rmANsVLZxVw44BJK6KlEw9MrYJK3Wj2i?usp=share_link',
   },
   {
-    title: "Discord Chat Channel",
-    caption: "chat.quasar.dev",
-    icon: "chat",
-    link: "https://chat.quasar.dev",
+    title: 'Schule',
+    caption: 'HTL Wien West',
+    icon: 'school',
+    link: 'https://www.htlwienwest.at',
+  },
+];
+
+const Button = [
+  {
+    Caption: 'Home',
+    link: '/',
+    icon: 'home',
   },
   {
-    title: "Forum",
-    caption: "forum.quasar.dev",
-    icon: "record_voice_over",
-    link: "https://forum.quasar.dev",
+    Caption: 'About',
+    link: '/about',
+    icon: 'info',
   },
   {
-    title: "Twitter",
-    caption: "@quasarframework",
-    icon: "rss_feed",
-    link: "https://twitter.quasar.dev",
+    Caption: 'Contact',
+    link: '/contact',
+    icon: 'mail',
   },
   {
-    title: "Facebook",
-    caption: "@QuasarFramework",
-    icon: "public",
-    link: "https://facebook.quasar.dev",
-  },
-  {
-    title: "Quasar Awesome",
-    caption: "Community Quasar projects",
-    icon: "favorite",
-    link: "https://awesome.quasar.dev",
+    Caption: 'Login',
+    link: '/login',
+    icon: 'login',
   },
 ];
 
 export default defineComponent({
-  name: "MainLayout",
+  name: 'MainLayout',
 
   components: {
     EssentialLink,
+    ButtonDropdown,
   },
 
   setup() {

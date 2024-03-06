@@ -6,10 +6,12 @@ const routes = [
   },
   {
     path: '/republik',
+    component: () => import('layouts/RepublikLayout.vue'),
     children: [{ path: '', component: () => import('pages/Republik.vue') }],
   },
   {
     path: '/imperium,',
+    component: () => import('layouts/ImperiumLayout.vue'),
     children: [{ path: '', component: () => import('pages/ImperiumPage.vue') }],
   },
   {

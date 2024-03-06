@@ -1,7 +1,7 @@
 <template>
   <q-layout view="lHh Lpr lFf">
     <q-header elevated>
-      <q-toolbar>
+      <q-toolbar class="bg-grey">
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title> Imperium vs Galaktische Republik </q-toolbar-title>
@@ -72,22 +72,22 @@ const Button = [
   {
     Caption: 'Home',
     link: '/',
-    icon: 'home',
   },
   {
-    Caption: 'About',
-    link: '/about',
-    icon: 'info',
+    Caption: 'Republik',
+    link: '/republik',
+  },
+  {
+    Caption: 'Imperium',
+    link: '/imperium',
   },
   {
     Caption: 'Contact',
     link: '/contact',
-    icon: 'mail',
   },
   {
-    Caption: 'Login',
-    link: '/login',
-    icon: 'login',
+    Caption: 'About',
+    link: '/about',
   },
 ];
 

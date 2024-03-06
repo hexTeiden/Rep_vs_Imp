@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-list>
-      <q-item clickable tag="a" :href="link" v-close-popup>
+      <q-item clickable tag="a" :href="link">
         <q-item-section>
           <q-item-label>{{ Caption }}</q-item-label>
         </q-item-section>
@@ -22,7 +22,7 @@ export default defineComponent({
     },
     link: {
       type: String,
-      default: '#',
+      default: '',
     },
   },
 });

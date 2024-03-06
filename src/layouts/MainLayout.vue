@@ -5,13 +5,11 @@
         <q-btn flat dense round icon="menu" aria-label="Menu" @click="toggleLeftDrawer" />
 
         <q-toolbar-title> Imperium vs Galaktische Republik </q-toolbar-title>
-        <!-- TODO: Change the name of the div below me :D -->
+        <NavbarElements v-for="link in buttonlinks" :key="link.Caption" v-bind="link" />
         <div>
-          <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
+          <q-drawer>
             <q-list>
-              <q-item-label>Important Webpage Links</q-item-label>
               <!-- FIXME: Fix the Button Dropdown -->
-              <ButtonDropdown v-for="link in Button" :key="link.caption" v-bind="link" />
             </q-list>
           </q-drawer>
         </div>
@@ -20,8 +18,7 @@
 
     <q-drawer v-model="leftDrawerOpen" show-if-above bordered>
       <q-list>
-        <!-- TODO: Add more important Links to the navbar -->
-        <q-item-label header> Essential Links </q-item-label>
+        <q-item-label header> Referential Links </q-item-label>
 
         <EssentialLink v-for="link in essentialLinks" :key="link.title" v-bind="link" />
       </q-list>
@@ -36,19 +33,19 @@
 <script>
 import { defineComponent, ref } from 'vue';
 import EssentialLink from 'components/EssentialLink.vue';
-import ButtonDropdown from 'components/DropdownButton.vue';
+import NavbarElements from 'components/NavbarElements.vue';
 
 const linksList = [
   {
-    title: 'Suffering',
+    title: 'Github',
     caption: 'github.com',
-    icon: 'code',
+    icon: 'public',
     link: 'https://github.com/hexTeiden/Rep_vs_Imp',
   },
   {
     title: 'Drive',
     caption: 'Google Drive',
-    icon: 'code',
+    icon: 'public',
     link: 'https://drive.google.com/drive/folders/1rmANsVLZxVw44BJK6KlEw9MrYJK3Wj2i?usp=share_link',
   },
   {
@@ -56,6 +53,18 @@ const linksList = [
     caption: 'HTL Wien West',
     icon: 'school',
     link: 'https://www.htlwienwest.at',
+  },
+  {
+    title: 'Vue Framework',
+    caption: 'Vue.js',
+    icon: 'code',
+    link: 'https://vuejs.org',
+  },
+  {
+    title: 'Quasar Framework',
+    caption: 'Quasar.dev',
+    icon: 'code',
+    link: 'https://quasar.dev',
   },
 ];
 
@@ -87,7 +96,7 @@ export default defineComponent({
 
   components: {
     EssentialLink,
-    ButtonDropdown,
+    NavbarElements,
   },
 
   setup() {
@@ -95,6 +104,7 @@ export default defineComponent({
 
     return {
       essentialLinks: linksList,
+      buttonlinks: Button,
       leftDrawerOpen,
       toggleLeftDrawer() {
         leftDrawerOpen.value = !leftDrawerOpen.value;

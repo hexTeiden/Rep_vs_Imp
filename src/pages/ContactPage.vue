@@ -46,7 +46,6 @@ export default defineComponent({
     };
   },
 });
-//TODO: Fix the fucking css because I'm getting cancer rn
 </script>
 
 <style lang="sass" scoped>

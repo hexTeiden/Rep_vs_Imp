@@ -75,12 +75,12 @@ const Button = [
     link: '/imperium',
   },
   {
-    Caption: 'Contact',
-    link: '/contact',
-  },
-  {
     Caption: 'About',
     link: '/about',
+  },
+  {
+    Caption: 'Contact',
+    link: '/contact',
   },
 ];
 

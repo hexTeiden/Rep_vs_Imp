@@ -15,6 +15,7 @@ const cards = [
     Klasse: '3CHIT',
     Rolle: 'Projektleiter',
     Mail: 'knogler.m19@htlwienwest.at',
+    Telefon: '0664 422 7392',
     link: Test,
   },
   {
@@ -22,6 +23,7 @@ const cards = [
     Klasse: '3CHIT',
     Rolle: 'Vize Projektleiter',
     Mail: 'iveljic.l21@htlwienwest.at',
+    Telefon: '0664 422 9372',
     link: Test,
   },
   {
@@ -29,6 +31,7 @@ const cards = [
     Klasse: '3CHIT',
     Rolle: 'Projektmitglied',
     Mail: 'sadat.m21@htlwienwest.at',
+    Telefon: '0664 422 7392',
     link: Test,
   },
 ];

@@ -8,7 +8,8 @@
       <q-card-section>
         Klasse: {{ Klasse }} <br />
         Rolle: {{ Rolle }} <br />
-        Mail: {{ Mail }}
+        Mail: {{ Mail }} <br />
+        Telefon: {{ Telefon }} <br />
       </q-card-section>
     </q-card>
   </div>
@@ -37,6 +38,10 @@ export default defineComponent({
       type: String,
       required: true,
       default: '@htlwienwest.at',
+    },
+    Telefon: {
+      type: String,
+      default: '0664 123 45 67',
     },
     link: {
       type: String,

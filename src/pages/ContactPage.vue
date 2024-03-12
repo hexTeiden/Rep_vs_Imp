@@ -1,6 +1,6 @@
 <template>
   <div class="row justify-center wrap">
-    <cards v-for="card in cards" :key="card.Caption" v-bind="card" class="my-card" />
+    <cards v-for="card in cards" :key="card.Name" v-bind="card" class="my-card" />
   </div>
 </template>
 

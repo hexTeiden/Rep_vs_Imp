@@ -5,8 +5,8 @@
       <q-card-section>
         <div class="text-h6">{{ Name }}</div>
       </q-card-section>
-      <q-card-section
-        >Klasse: {{ Klasse }} <br />
+      <q-card-section>
+        Klasse: {{ Klasse }} <br />
         Rolle: {{ Rolle }} <br />
         Mail: {{ Mail }}
       </q-card-section>

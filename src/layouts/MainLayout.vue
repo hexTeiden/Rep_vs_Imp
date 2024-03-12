@@ -6,13 +6,6 @@
 
         <q-toolbar-title> Imperium vs Galaktische Republik </q-toolbar-title>
         <NavbarElements v-for="link in buttonlinks" :key="link.Caption" v-bind="link" />
-        <div>
-          <q-drawer>
-            <q-list>
-              <!-- FIXME: Fix the Button Dropdown -->
-            </q-list>
-          </q-drawer>
-        </div>
       </q-toolbar>
     </q-header>
 

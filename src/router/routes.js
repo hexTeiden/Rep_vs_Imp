@@ -7,7 +7,7 @@ const routes = [
   {
     path: '/republik',
     component: () => import('layouts/RepublikLayout.vue'),
-    children: [{ path: '', component: () => import('pages/Republik.vue') }],
+    children: [{ path: '', component: () => import('pages/RepublikPage.vue') }],
   },
   {
     path: '/imperium,',

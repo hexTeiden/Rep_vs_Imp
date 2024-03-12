@@ -10,18 +10,18 @@ const routes = [
     children: [{ path: '', component: () => import('pages/RepublikPage.vue') }],
   },
   {
-    path: '/imperium,',
+    path: '/imperium',
     component: () => import('layouts/ImperiumLayout.vue'),
     children: [{ path: '', component: () => import('pages/ImperiumPage.vue') }],
   },
   {
     path: '/contact',
-    component: () => import('pages/ContactLayout.vue'),
+    component: () => import('layouts/ContactLayout.vue'),
     children: [{ path: '', component: () => import('pages/ContactPage.vue') }],
   },
   {
     path: '/about',
-    component: () => import('pages/AboutLayout.vue'),
+    component: () => import('layouts/AboutLayout.vue'),
     children: [{ path: '', component: () => import('pages/AboutPage.vue') }],
   },
 

@@ -1,11 +1,7 @@
 <template>
-  <q-page class="flex flex-center">
-    <q-page-container>
-      <q-list bordered class="flex-inline">
-        <cards v-for="card in cards" :key="card.Caption" v-bind="card" />
-      </q-list>
-    </q-page-container>
-  </q-page>
+  <div class="row justify-center wrap">
+    <cards v-for="card in cards" :key="card.Caption" v-bind="card" class="my-card" />
+  </div>
 </template>
 
 <script>
@@ -17,16 +13,22 @@ const cards = [
   {
     Name: 'Matteo Knogler',
     Klasse: '3CHIT',
+    Rolle: 'Projektleiter',
+    Mail: 'knogler.m19@htlwienwest.at',
     link: Test,
   },
   {
     Name: 'Lukas Iveljic',
     Klasse: '3CHIT',
+    Rolle: 'Vize Projektleiter',
+    Mail: 'iveljic.l21@htlwienwest.at',
     link: Test,
   },
   {
     Name: 'Sayed Sadat Mubashar',
     Klasse: '3CHIT',
+    Rolle: 'Projektmitglied',
+    Mail: 'sadat.m21@htlwienwest.at',
     link: Test,
   },
 ];
@@ -44,4 +46,12 @@ export default defineComponent({
     };
   },
 });
+//TODO: Fix the fucking css because I'm getting cancer rn
 </script>
+
+<style lang="sass" scoped>
+.cardslist
+  list-style-type: none
+  padding: 0
+  display: inline-block
+</style>

@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-list>
-      <q-item clickable tag="a" :to="link">
+      <q-item clickable tag="a" :to="link" exact>
         <q-item-section>
           <q-item-label>{{ Caption }}</q-item-label>
         </q-item-section>

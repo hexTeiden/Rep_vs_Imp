@@ -82,10 +82,6 @@ const Button = [
     Caption: 'About',
     link: '/about',
   },
-  {
-    Caption: 'RepublikPage',
-    link: '/republikpage',
-  },
 ];
 
 export default defineComponent({

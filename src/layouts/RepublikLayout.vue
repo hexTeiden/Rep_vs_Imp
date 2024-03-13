@@ -59,6 +59,12 @@ const linksList = [
     icon: 'code',
     link: 'https://quasar.dev',
   },
+  {
+    title: 'Juxtapose',
+    caption: 'Link to Juxtapose',
+    icon: 'code',
+    link: 'https://juxtapose.knightlab.com',
+  },
 ];
 
 const Button = [

@@ -91,7 +91,6 @@ export default defineComponent({
 
 <style lang="sass">
 .img
-  size: 100%
   margin-top: 20px
   margin-left: 20px
   margin-right: 20px

@@ -27,7 +27,7 @@
             </span>
             <span>
               <q-img
-                src="../images/Test.jpg"
+                src="../images/Lukas.jpg"
                 :ratio="16 / 9"
                 spinner-color="primary"
                 spinner-size="82px"
@@ -57,7 +57,8 @@
         </q-card-section>
 
         <q-card-section class="col-5 flex flex-center">
-          <q-img class="rounded-borders" src="https://cdn.quasar.dev/img/parallax2.jpg" />
+          <!-- Ich bring mich selber um wegen diesem Logo -->
+          <q-img class="rounded-borders" src="/src/images/Logo.PNG" />
         </q-card-section>
       </q-card-section>
 

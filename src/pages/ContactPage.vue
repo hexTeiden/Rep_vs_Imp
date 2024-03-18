@@ -7,7 +7,9 @@
 <script>
 import { defineComponent } from 'vue';
 import Cards from 'src/components/UserCards.vue';
-import Test from '../images/Test.jpg';
+import Matteo from '../images/Test.jpg';
+import Sayed from 'src/images/Sayed_contact.png';
+import Lukas from 'src/images/Lukas.jpg';
 
 const cards = [
   {
@@ -16,7 +18,7 @@ const cards = [
     Rolle: 'Projektleiter',
     Mail: 'knogler.m19@htlwienwest.at',
     Telefon: '0664 422 7392',
-    link: Test,
+    link: Matteo,
   },
   {
     Name: 'Lukas Iveljic',
@@ -24,7 +26,7 @@ const cards = [
     Rolle: 'Vize Projektleiter',
     Mail: 'iveljic.l21@htlwienwest.at',
     Telefon: '0664 422 9372',
-    link: Test,
+    link: Lukas,
   },
   {
     Name: 'Sayed Sadat Mubashar',
@@ -32,7 +34,7 @@ const cards = [
     Rolle: 'Projektmitglied',
     Mail: 'sadat.m21@htlwienwest.at',
     Telefon: '0664 422 7392',
-    link: Test,
+    link: Sayed,
   },
 ];
 

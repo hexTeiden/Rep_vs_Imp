@@ -1,6 +1,6 @@
 <template>
   <audio autoplay loop>
-    <source src="../audios/Empire.mp3" type="audio/mp3" />
+    <source src="/audios/Empire.mp3" type="audio/mp3" />
   </audio>
   <q-page class="flex flex-center">
     <q-page-container>

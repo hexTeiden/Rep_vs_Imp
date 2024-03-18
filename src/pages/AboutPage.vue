@@ -41,7 +41,7 @@
             </span>
             <span>
               <q-img
-                src="../images/Test.jpg"
+                src="../images/Sayed_contact.png"
                 :ratio="16 / 9"
                 spinner-color="primary"
                 spinner-size="82px"

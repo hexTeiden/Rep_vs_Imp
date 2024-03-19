@@ -10,7 +10,7 @@
             erklären. Viele Menschen (vor allem Menschen die Star Wars nicht gesehen haben) wissen
             nicht was der Unterschied zwischen der Republik und des Imperiums ist und
             dementsprechend auch nicht wie sie über die Galaxie herrschen.
-            <p class="text-overline">Projektteam</p>
+            <p class="text-h5">Projektteam</p>
             <span>
               <q-img
                 src="../images/Test.jpg"

@@ -21,6 +21,7 @@ export default defineComponent({
   },
   methods: {
     test() {
+      //can be overwritten for any specific function that has to be tested before deployin the actual method
       if (this.counter === 0) {
         this.republic.play();
         this.counter++;

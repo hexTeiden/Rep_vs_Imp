@@ -1,9 +1,7 @@
 <template>
   <q-page class="flex flex-center">
     <video>
-      <source
-        src="https://drive.google.com/file/d/1i_PbfSGXsl_AHOMcaSgwV54VtDOrOieg/view?usp=sharing"
-      />
+      <source src="https://youtu.be/whbdfXroHi0" />
       Shit does not work
     </video>
   </q-page>

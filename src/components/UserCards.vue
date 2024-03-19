@@ -1,7 +1,7 @@
 <template>
   <div class="q-pa-md">
     <q-card class="my-card q-pa-md">
-      <img :src="link" style="width: 20rem; border-radius: 10px" />
+      <q-img :src="link" style="width: 20rem; border-radius: 10px" />
       <q-card-section>
         <div class="text-h6">{{ Name }}</div>
       </q-card-section>

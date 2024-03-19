@@ -1,9 +1,13 @@
 <template>
   <q-page class="flex flex-center">
-    <video>
-      <source src="https://youtu.be/whbdfXroHi0" />
-      Shit does not work
-    </video>
+    <iframe
+      frameborder="0"
+      class="juxtapose q-ml-xl q-mr-auto q-mt-md q-mb-md"
+      width="100%"
+      height="911"
+      margin-left="150px"
+      src="https://cdn.knightlab.com/libs/juxtapose/latest/embed/index.html?uid=78215c26-e58b-11ee-9685-5d0fb8b12f54"
+    ></iframe>
   </q-page>
 </template>
 
